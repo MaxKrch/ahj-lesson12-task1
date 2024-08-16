@@ -3,7 +3,7 @@ import App from './api/App.js';
 window.addEventListener('load', async () => {
   try {
     if (navigator.serviceWorker) {
-      await navigator.serviceWorker.register(`../service-worker.js`);
+      await navigator.serviceWorker.register(`./service-worker.js`);
     }
   } catch (err) {
     console.log(err);
