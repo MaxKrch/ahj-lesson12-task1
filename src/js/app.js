@@ -11,7 +11,8 @@ window.addEventListener('load', async () => {
 });
 
 const OPTIONS = {
-  URL: 'http://localhost:7070',
+  // URL: 'http://localhost:7070',
+  URL: 'https://ahj-lesson12-task1-backend.onrender.com',
   // URL: 'http://192.168.1.101:7070',
   CONTAINER: '[data-id="app"]',
 };
