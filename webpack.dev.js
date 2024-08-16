@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common');
+const path = require('path');
 
 module.exports = merge(common, {
   // Set the mode to development or production
@@ -14,6 +15,15 @@ module.exports = merge(common, {
     historyApiFallback: true,
     open: true,
     compress: true,
+    static: [
+      {
+        directory: './src/index.html',
+      },
+    ],
+    client: {
+      //Close overlay, if use workbox 
+      overlay: false,
+    },
   },
 
   plugins: [
